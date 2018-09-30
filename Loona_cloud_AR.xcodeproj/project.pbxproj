@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209BDE1A21604A9400E1A454 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 209BDE1921604A9400E1A454 /* video.mp4 */; };
 		20CF9C78215DD27E0090120C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF9C77215DD27E0090120C /* AppDelegate.swift */; };
 		20CF9C7A215DD27E0090120C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CF9C79215DD27E0090120C /* art.scnassets */; };
 		20CF9C7C215DD27E0090120C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF9C7B215DD27E0090120C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209BDE1921604A9400E1A454 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		20CF9C74215DD27E0090120C /* Loona_cloud_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loona_cloud_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CF9C77215DD27E0090120C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20CF9C79215DD27E0090120C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				20CF9C77215DD27E0090120C /* AppDelegate.swift */,
+				209BDE1921604A9400E1A454 /* video.mp4 */,
 				20CF9C79215DD27E0090120C /* art.scnassets */,
 				20CF9C7B215DD27E0090120C /* ViewController.swift */,
 				20CF9C7D215DD27E0090120C /* Main.storyboard */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20CF9C7A215DD27E0090120C /* art.scnassets in Resources */,
+				209BDE1A21604A9400E1A454 /* video.mp4 in Resources */,
 				20CF9C84215DD27F0090120C /* LaunchScreen.storyboard in Resources */,
 				20CF9C81215DD27F0090120C /* Assets.xcassets in Resources */,
 				20CF9C7F215DD27E0090120C /* Main.storyboard in Resources */,
