@@ -36,7 +36,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Ressources", bundle: nil) else { return }
+        guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
         
         configuration.trackingImages = arImages
         // Run the view's session
@@ -55,5 +55,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard anchor is ARImageAnchor else { return }
         
         //Container
+        guard let container = sceneView.scene.rootNode.childNode(withName: "container", recursively: false) else { return }
+        container.removeFromParentNode()
+        node.addChildNode(container)
+        container.isHidden = false
     }
 }

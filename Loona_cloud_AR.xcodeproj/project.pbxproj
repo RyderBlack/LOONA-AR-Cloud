@@ -58,8 +58,8 @@
 		20CF9C76215DD27E0090120C /* Loona_cloud_AR */ = {
 			isa = PBXGroup;
 			children = (
-				20CF9C77215DD27E0090120C /* AppDelegate.swift */,
 				209BDE1921604A9400E1A454 /* video.mp4 */,
+				20CF9C77215DD27E0090120C /* AppDelegate.swift */,
 				20CF9C79215DD27E0090120C /* art.scnassets */,
 				20CF9C7B215DD27E0090120C /* ViewController.swift */,
 				20CF9C7D215DD27E0090120C /* Main.storyboard */,
