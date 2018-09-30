@@ -66,7 +66,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Video
         let videoURL = Bundle.main.url(forResource: "video", withExtension: "mp4")!
         let videoPlayer = AVPlayer(url: videoURL)
-        let videoScene = SKScene(size: CGSize(width: 720.0, height: 1280.0))
+        let videoScene = SKScene(size: CGSize(width: 1280.0, height: 720.0))
         let videoNode = SKVideoNode(avPlayer: videoPlayer)
         
         videoNode.position = CGPoint(x: videoScene.size.width / 2, y: videoScene.size.height / 2)
@@ -75,9 +75,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         videoNode.play()
         videoScene.addChild(videoNode)
         
-        guard let video = container.childNode(withName: "video", recursively: false) else { return }
+        guard let video = container.childNode(withName: "video", recursively: true) else { return }
         video.geometry?.firstMaterial?.diffuse.contents = videoScene
         
         // Animations
+       guard let videoContainer = container.childNode(withName: "videoContainer", recursively: false ) else { return }
+        videoContainer.runAction(SCNAction.sequence([SCNAction.wait(duration: 1.0), SCNAction.scale(to: 1.0, duration: 0.5)]))
     }
 }
