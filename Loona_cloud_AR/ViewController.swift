@@ -50,7 +50,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         container.isHidden = false
         
         // Video
-        let videoURL = Bundle.main.url(forResource: "video", withExtension: "mp4")!
+        let videoURL = Bundle.main.url(forResource: "video-oliviahye", withExtension: "mp4")!
         let videoPlayer = AVPlayer(url: videoURL)
         let videoScene = SKScene(size: CGSize(width: 1280.0, height: 720.0))
         let videoNode = SKVideoNode(avPlayer: videoPlayer)
@@ -61,7 +61,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         videoNode.play()
         videoScene.addChild(videoNode)
         
-        guard let video = container.childNode(withName: "video", recursively: true) else { return }
+        guard let video = container.childNode(withName: "video-oliviahye", recursively: true) else { return }
         video.geometry?.firstMaterial?.diffuse.contents = videoScene
         
         // Animations
@@ -69,6 +69,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         videoContainer.runAction(SCNAction.sequence([SCNAction.wait(duration: 1.0), SCNAction.scale(to: 1.0, duration: 0.5)]))
     }
     
+    //For audio working, viewDidLoad is here
     override func viewDidLoad() {
         super.viewDidLoad()
         
