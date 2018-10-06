@@ -26,6 +26,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
         
+        var maximumNumberOfTrackedImages: 5 { return }
         configuration.trackingImages = arImages
         // Run the view's session
         sceneView.session.run(configuration)
