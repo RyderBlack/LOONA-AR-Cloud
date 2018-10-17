@@ -25,7 +25,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARImageTrackingConfiguration()
         
         guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
-        var maximumNumberOfTrackedImages: Int { get 5 }
+        //var maximumNumberOfTrackedImages: Int { get 5 }
         configuration.trackingImages = arImages
         // Run the view's session
         sceneView.session.run(configuration)
@@ -48,6 +48,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         container.removeFromParentNode()
         node.addChildNode(container)
         container.isHidden = false
+        
+        //Creating A SWITCH CASE here
+        
         
         // Video
         let videoURL = Bundle.main.url(forResource: "video-oliviahye", withExtension: "mp4")!
